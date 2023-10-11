@@ -10,16 +10,17 @@
 </head>
 
 <body>
-    <h1> Quiz de conhecimento sobre <i>front-end</i></h1>
-    <form name="quiz">
-        <h3>
-            1) Qual comando captura um elemento da página HTML de id = "dados"?
-        </h3>
+    <h1> Quiz de conhecimento sobre <i>JavaScript</i></h1>
+    <form name="quiz" id="quiz">
+        <div class="question">
+            <h2>1)</h2>
+            <h3>Qual comando captura um elemento da página HTML de id = "dados"?</h3>
+        </div>
         <p>
-            <input type="radio" name="q1"> document.getName("dados")
+            <input type="radio" name="q1" id="teste"> document.getName("dados")
         </p>
         <p>
-            <input type="radio" name="q1"> Application.getId("dados")
+            <input type="radio" name="q1"> application.getId("dados")
         </p>
         <p>
             <input type="radio" name="q1"> document.getElementById("dados")
@@ -30,10 +31,10 @@
         <p>
             <input type="radio" name="q1"> documento.getElementById("dados")
         </p>
-
-        <h3>
-            2) O comando alert serve para:
-        </h3>
+        <div class="question">
+            <h2>2)</h2>
+        <h3>O comando alert serve para:</h3>
+    </div>
         <p>
             <input type="radio" name="q2" id=""> Exibir algum conteúdo em uma janela pop-up.
         </p>
@@ -49,10 +50,10 @@
         <p>
             <input type="radio" name="q2"> Alertar o usuário sobre erros.
         </p>
-
-        <h3>
-            3) O comando console.log() tem qual a finalidade de:
-        </h3>
+        <div class="question">
+            <h2>3)</h2>
+            <h3>O comando console.log() tem qual a finalidade de:</h3>
+    </div>
         <p>
             <input type="radio" name="q3"> Logar em um console especifíco.
         </p>
@@ -70,14 +71,19 @@
         </p>
 
         <p>
-            <input type="button" value="Finalizar Quiz" onclick="corrigir()">
+            <input type="button" value="Finalizar Quiz" onclick="checkAnswers()" id="submit">
         </p>
+
+        <div id="results">
+            <p></p>
+        </div>
+
     </form>
 
-    <div id="results">
-        <p></p>
-    </div>
-    
+    <footer>
+        <p id="rating"></p>
+    </footer>
+
 </body>
 
 </html>

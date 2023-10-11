@@ -1,5 +1,56 @@
-/* * {
-    margin: 0;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-} */
+}
+
+form#quiz {
+    width: 70vw;
+    border: solid 4px purple;
+}
+
+div.question {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0;
+}
+
+div.question h2 {
+    margin: 5px 0 0;
+    font-size: 2.5em;
+}
+
+div.question h3 {
+    margin: 10px 0 0;
+    font-size: 1.5em;
+}
+
+form#quiz h2, form#quiz h3, form#quiz p{
+    margin-left: 10px;
+}
+
+input#submit {
+    display: flex;
+    margin: 0 auto;
+    font-size: 2em;
+}
+
+div#results {
+    display: none;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    border-top: solid 5px purple;
+}
+
+div#results p {
+    margin: 0;
+}
+
+footer p {
+    font-size: 2em;
+}
