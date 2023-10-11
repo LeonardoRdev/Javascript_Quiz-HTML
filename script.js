@@ -9,5 +9,16 @@ function corrigir() {
     if (document.quiz.q3[1].checked) {
         score += 1
     }
-    alert("Você obteve " + score + "/3 pontos!")
+
+    document.querySelector("div#results p").innerHTML = "Você obteve " + score + "/3 pontos!";
+    if (score == 0) {
+        alert("Ruim d+");
+    } else if (score == 1) {
+        alert("Chutou todas né");
+    } else if (score == 2) {
+        alert("Até que foi bem");
+    } else {
+        alert("Usou Chat GPT");
+    }
+
 }
