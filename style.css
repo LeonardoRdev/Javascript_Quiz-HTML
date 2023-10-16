@@ -45,6 +45,7 @@ div.question h3 {
 
 form#quiz h2, form#quiz h3, form#quiz p {
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 form#quiz p {
@@ -97,8 +98,16 @@ footer p {
         font-size: 2em;
     }
 
+    #question h2{
+        font-size: 1.2em;
+    }
+
+    #question h3{
+        font-size: 0.8em;
+    }
+
     form#quiz p{
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     div#results p {
@@ -107,5 +116,10 @@ footer p {
 
     input#submit:hover {
         transform: scale(1);
+    }
+
+    #rating{
+        padding: 0 25px;
+        text-align: center;
     }
 }
