@@ -88,3 +88,24 @@ div#results p {
 footer p {
     font-size: 2em;
 }
+
+
+
+@media only screen and (max-width: 500px) {
+
+    h1#title{
+        font-size: 2em;
+    }
+
+    form#quiz p{
+        font-size: 1em;
+    }
+
+    div#results p {
+        margin: 5px;
+    }
+
+    input#submit:hover {
+        transform: scale(1);
+    }
+}
